@@ -197,12 +197,12 @@ color: #C59A6D;
 background-color: transparent;
 }
 
-.close:hover{
+button.close:hover{
 	background: #c59a6d;
 	color: #ffffff;
 	opacity: 1;
 }
-.close{
+button.close{
 	background: #fff;
 	padding: 10px 12px;
 	opacity: 1;
@@ -508,7 +508,7 @@ address strong{
 	font-style: normal;
 	font-family: 'Montserrat', sans-serif;
 }
-/*address:before{
+address:before{
 	content: "\f041";
 	display: inline-block;
   	font: normal normal normal 14px/1 FontAwesome;
@@ -520,12 +520,13 @@ address strong{
   	vertical-align: middle;
   	margin-right: 15px;
   	margin-left: -30px;
-}*/
+}
 address{
 	font-style: italic;
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
+  padding-left: 30px;
 }
 
 #contact input.form-control,
