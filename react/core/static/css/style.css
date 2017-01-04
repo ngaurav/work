@@ -242,7 +242,7 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 #expandbutton > a:before {
-  content: '\f48a';
+  content: '\f405';
   font-family: 'Ionicons';
   font-size: 30px;
   font-weight: normal;
@@ -262,11 +262,11 @@ a.down-btn span.fa.fa-angle-down {
   transform-origin: 50% center;
 }
 #expandbutton > a.collapsed:before {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 #overview-video {
