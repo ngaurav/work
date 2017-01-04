@@ -214,6 +214,7 @@ button.close{
 }
 
 #meet-us,
+#story,
 #services,
 #works,
 #about-us{
@@ -238,13 +239,14 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 #expandbutton > a:before {
-  content: '\f48b';
-  color: #ffffff;
+  content: '\f48a';
   font-family: 'Ionicons';
   font-size: 36px;
   font-weight: normal;
   display: inline-block;
-  color: @brand-primary;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   -ms-transition: all .3s ease-out;
