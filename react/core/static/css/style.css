@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 
 body, html{
@@ -232,8 +233,35 @@ a.down-btn span.fa.fa-angle-down {
 
 #story{
 	background: #282f35;
-	padding: 8% 0 ;
+	padding: 6% 0 ;
 	color: #ffffff;
+}
+
+#expandbutton > a:before {
+  content: '\f48b';
+  color: #ffffff;
+  font-family: 'Ionicons';
+  font-size: 36px;
+  font-weight: normal;
+  display: inline-block;
+  color: @brand-primary;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transform-origin: 50% center;
+  -moz-transform-origin: 50% center;
+  -ms-transform-origin: 50% center;
+  -o-transform-origin: 50% center;
+  transform-origin: 50% center;
+}
+#expandbutton > a.collapsed:before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 #overview-video {
