@@ -251,12 +251,12 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 #expandbutton > a:before {
-  content: '\f405';
+  content: '\f406';
   font-family: 'Ionicons';
-  font-size: 30px;
+  font-size: 32px;
   font-weight: normal;
   display: inline-block;
-  color: #ffffff;
+  color: #c59a6d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: all .3s ease-out;
