@@ -239,6 +239,15 @@ a.down-btn span.fa.fa-angle-down {
 
 #storydetails {
   margin: 0;
+  font-family: 'Lato';
+}
+
+#storydetails a {
+  color: #c59a6d;
+}
+
+#storydetails a:hover {
+  border-bottom: 1px dotted #c59a6d;
 }
 
 #expandbutton > a:before {
