@@ -30,7 +30,7 @@ function add_guess() {
   e.nextElementSibling.innerHTML = inputData[1];
   e.nextElementSibling.nextElementSibling.innerHTML = inputData[2];
 
-  $('#g-input').find(".g-instruction-hed").innerHTML = "You can test another sequence if you want:";
+  $('#g-input').find(".g-instruction-hed")[0].innerHTML = "You can test another sequence if you want:";
 
   $('.g-guess-hed').css("display", "block");
 
