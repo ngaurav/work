@@ -32,7 +32,7 @@ function add_guess() {
 
   $('#g-input').find(".g-instruction-hed").innerHTML = "You can test another sequence if you want:";
 
-  $('.g-guess-hed')..css("display", "block");
+  $('.g-guess-hed').css("display", "block");
 
   var rightWrong = (inputData[0] < inputData[1]) & (inputData[1] < inputData[2]) ? right : wrong;
   clone.find(".g-answer").remove();
