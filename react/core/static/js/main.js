@@ -24,7 +24,7 @@ function add_guess() {
   var guesses = $('#g-guesses');
   var guess = $('#g-guess');
   var clone = guess.clone();
-  var e = clone.find(".go-to-button");
+  var e = clone.find(".go-to-btn");
   e.innerHTML = inputData[0];
   e.next().innerHTML = inputData[1];
   e.next().next().innerHTML = inputData[2];
