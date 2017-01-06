@@ -329,6 +329,7 @@ storydetails a:hover {
 .space{ padding-top: 40px; }
 
 .g-answer {
+  padding-left: 10px;
   display: inline-block;
 }
 
@@ -344,7 +345,7 @@ storydetails a:hover {
 }
 .go-to-btn:disabled{
 	background: #c59a6d;
-	color: #282f35 !important;
+	color: #282f35;
 }
 
 .nopadding{
