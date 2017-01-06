@@ -3,6 +3,7 @@
 // This is The Scripts used for ___________ Theme
 //
 //
+var inputData = [NaN, NaN, NaN];
 function checkNumbers() {
         $("#game input").each(function(i) {
             var val = $(this).val();
