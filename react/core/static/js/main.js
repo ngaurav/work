@@ -22,7 +22,8 @@ function add_guess() {
   // document.getElementById('pText').innerHTML = "You pressed " + value;
   var guesses = $('#g-guesses');
   var guess = $('#g-guess');
-  guesses.append(guess);
+  var clone = guess.clone();
+  guesses.append(clone);
 }
 
 function duplicate() {
