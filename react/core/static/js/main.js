@@ -19,6 +19,10 @@ function checkNumbers() {
   return broken;
 }
 
+function show_sol() {
+  $('.g-result').css("display", "block");
+}
+
 function add_guess() {
   // document.getElementById('pText').innerHTML = "You pressed " + value;
   var guesses = $('#g-guesses');
@@ -30,9 +34,12 @@ function add_guess() {
   e.nextElementSibling.innerHTML = inputData[1];
   e.nextElementSibling.nextElementSibling.innerHTML = inputData[2];
 
+  $('#g-input').find('input').val('');
+
   $('#g-input').find(".g-instruction-hed")[0].innerHTML = "You can test another sequence if you want:";
 
   $('.g-guess-hed').css("display", "block");
+  $('.g-bottom-button-container').css("display", "block");
 
   var rightWrong = (inputData[0] < inputData[1]) & (inputData[1] < inputData[2]) ? right : wrong;
   clone.find(".g-answer").remove();
