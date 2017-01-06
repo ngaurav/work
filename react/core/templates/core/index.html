@@ -199,7 +199,7 @@
               <div>
                 <h4 class="g-instruction-hed">Here’s how it works:</h4>
                 <p class="g-instructions">We’ve chosen a rule that some sequences of three numbers obey — and some do not. Your job is to guess what the rule is.</p> <p class="g-instructions"><br>We’ll start by telling you that the sequence 2, 4, 8 obeys the rule:</p>
-                <div class="g-example">
+                <div id="g-guess" class="g-example">
                   <div class="g-numbers g-yes-num-group">
                     <button class="go-to-btn" disabled="">2</button>
                     <button class="go-to-btn" disabled="">4</button>
@@ -211,8 +211,8 @@
               <div class="g-yours">
                 <p class="g-instructions">Now it’s your turn. Enter a number sequence in the boxes below, and we’ll tell you whether it satisfies the rule or not. You can test as many sequences as you want.</p>
 
-                <!-- <h3 class="g-instruction-hed g-first-guess-hed g-secod-instruction-hed g-first-guess-already-done" style="display: none;">Your guesses:</h3> -->
-                <!-- <div id="" class="g-guess">
+                <h3 class="g-instruction-hed g-first-guess-hed g-secod-instruction-hed g-first-guess-already-done" style="display: none;">Your guesses:</h3>
+                <div id="g-guesses" class="g-guess">
                   <div class="g-numbers g-yes-num-group">
                     <input type="tel" autocomplete="off" class="go-to-btn g-first" disabled="">
                     <input type="tel" autocomplete="off" class="go-to-btn" disabled="">
@@ -220,7 +220,7 @@
 
                     <p class="g-answer g-yes">Yes!</p>
                   </div>
-                </div> -->
+                </div>
 
                 <div id="g-input" class="g-again">
                   <h5 class="g-instruction-hed g-first-guess-hed g-secod-instruction-hed">Enter your first sequence here:</h5>
@@ -229,7 +229,7 @@
                     <input type="text" class="g-num form-control" autocomplete="off">
                     <input type="text" class="g-num form-control" autocomplete="off">
                     <input type="text" class="g-num form-control" autocomplete="off">
-                    <button type="button" class="g-check btn check-btn">Check</button>
+                    <button type="button" class="g-check btn check-btn" onclick="add_guess()">Check</button>
                   </div>
                 </div>
               </div>
