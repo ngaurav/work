@@ -246,7 +246,7 @@ a.down-btn span.fa.fa-angle-down {
   color: #c59a6d;
 }
 
-.dark-bg a:hover {
+storydetails a:hover {
   border-bottom: 1px dotted #c59a6d;
 }
 
@@ -256,7 +256,6 @@ a.down-btn span.fa.fa-angle-down {
   font-size: 32px;
   font-weight: normal;
   display: inline-block;
-  color: #c59a6d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: all .3s ease-out;
