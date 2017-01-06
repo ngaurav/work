@@ -609,6 +609,7 @@ margin-bottom: 30px;
 #game .form-control {
   display: inline-block;
   text-align: center;
+  width: 71px;
   height: 40px;
   padding: 7px 30px;
 }
