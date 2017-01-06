@@ -231,7 +231,7 @@ a.down-btn span.fa.fa-angle-down {
 	margin-top: 30px;
 }
 
-#story{
+.dark-bg{
 	background: #282f35;
 	padding: 6% 0 ;
 	color: #ffffff;
@@ -242,11 +242,11 @@ a.down-btn span.fa.fa-angle-down {
   font-family: 'Lato';
 }
 
-#storydetails a {
+.dark-bg a {
   color: #c59a6d;
 }
 
-#storydetails a:hover {
+.dark-bg a:hover {
   border-bottom: 1px dotted #c59a6d;
 }
 
@@ -328,10 +328,10 @@ a.down-btn span.fa.fa-angle-down {
 }
 .space{ padding-top: 40px; }
 
-#cta{
+/*#cta{
 	background: #282f35;
 	padding: 4% 0;
-}
+}*/
 
 a.btn.go-to-btn{
 	text-transform: uppercase;
