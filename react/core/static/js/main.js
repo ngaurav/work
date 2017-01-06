@@ -3,6 +3,19 @@
 // This is The Scripts used for ___________ Theme
 //
 //
+function checkNumbers() {
+        $("#game input").each(function(i) {
+            var val = $(this).val();
+            inputData[i] = $.isNumeric(val) ? Number(val) : NaN;
+        });
+
+        var tot = inputData[0] + inputData[1] + inputData[2];
+
+        var broken = isNaN(tot);
+        $('.g-check').prop('disabled', broken);
+
+        return broken;
+    }
 
 function main() {
 
@@ -10,7 +23,7 @@ function main() {
    'use strict';
 
    /*====================================
-    Page a Link Smooth Scrolling 
+    Page a Link Smooth Scrolling
     ======================================*/
     $('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -28,7 +41,7 @@ function main() {
     /*====================================
     Menu Active Calling Scroll Spy
     ======================================*/
-    $('body').scrollspy({ 
+    $('body').scrollspy({
       target: '.navmenu',
       offset: 80,
     });
@@ -36,31 +49,38 @@ function main() {
 
     /* ==============================================
 	Testimonial Slider
-	=============================================== */ 
+	=============================================== */
 
 	$(document).ready(function() {
-	 
+
 	  $("#testimonial").owlCarousel({
-	 
+
 	      navigation : false, // Show next and prev buttons
 	      slideSpeed : 300,
 	      paginationSpeed : 400,
 	      singleItem:true,
 	      autoHeight : true
-	 
+
 	      // "singleItem:true" is a shortcut for:
-	      // items : 1, 
+	      // items : 1,
 	      // itemsDesktop : false,
 	      // itemsDesktopSmall : false,
 	      // itemsTablet: false,
 	      // itemsMobile : false
-	 
-	  });
-	 
-	});
- 
 
- 
+	  });
+    $('.sendButton').attr('disabled',true);
+    $('#message').keyup(function(){
+        if(checkNumbers())
+            $('.sendButton').attr('disabled', false);
+        else
+            $('.sendButton').attr('disabled',true);
+    })
+
+	});
+
+
+
 
 
 }());
