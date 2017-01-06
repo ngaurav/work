@@ -256,6 +256,7 @@ storydetails a:hover {
   font-size: 32px;
   font-weight: normal;
   display: inline-block;
+  color: #c59a6d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: all .3s ease-out;
