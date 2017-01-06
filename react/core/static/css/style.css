@@ -333,7 +333,7 @@ storydetails a:hover {
   display: inline-block;
 }
 
-.go-to-btn{
+.go-to-btn {
 	text-transform: uppercase;
 	border: 1px solid #c59a6d;
 	word-spacing: 2px;
@@ -343,9 +343,28 @@ storydetails a:hover {
   background: transparent;
 	transition: all 0.5s;
 }
-.go-to-btn:disabled{
+.go-to-btn:disabled {
 	background: #c59a6d;
 	color: #282f35;
+}
+
+.check-btn {
+  text-transform: uppercase;
+  background: #c59a6d;
+  color: #282f35;
+  padding: 10px 35px;
+  border-radius: 0;
+  font-size: 12px;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.check-btn:disabled {
+
+}
+.check-btn:hover {
+  background: transparent;
+  border: 1px solid #c59a6d;
+  color: #ffffff;
 }
 
 .nopadding{
