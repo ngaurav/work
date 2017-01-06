@@ -340,12 +340,11 @@ storydetails a:hover {
 	border-radius: 2px;
 	font-size: 12px;
   background: transparent;
-	color: #c59a6d;
 	transition: all 0.5s;
 }
 .go-to-btn:disabled{
 	background: #c59a6d;
-	color: #282f35;
+	color: #282f35 !important;
 }
 
 .nopadding{
