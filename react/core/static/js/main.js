@@ -69,8 +69,8 @@ function main() {
 	      // itemsMobile : false
 
 	  });
-    $('.sendButton').attr('disabled',true);
-    $('#message').keyup(function(){
+    $('.check-btn').attr('disabled',true);
+    $('.g-num').keyup(function(){
         if(checkNumbers())
             $('.sendButton').attr('disabled', false);
         else
