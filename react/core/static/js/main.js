@@ -4,6 +4,7 @@
 //
 //
 var inputData = [NaN, NaN, NaN];
+var right = "<p class = 'g-answer g-yes'>Yes!</p>", wrong = "<p class = 'g-answer g-no'>No.</p>";
 function checkNumbers() {
   $("#game input").each(function(i) {
     var val = $(this).val();
@@ -23,6 +24,14 @@ function add_guess() {
   var guesses = $('#g-guesses');
   var guess = $('#g-guess');
   var clone = guess.clone();
+  var e = clone.find(".go-to-button");
+  e.innerHTML = inputData[0];
+  e.next().innerHTML = inputData[1];
+  e.next().next().innerHTML = inputData[2];
+
+  var rightWrong = (inputData[0] < inputData[1]) & (inputData[1] < inputData[2]) ? right : wrong;
+  clone.find(".g-answer").remove();
+  clone.append(rightWrong);
   guesses.append(clone);
 }
 
