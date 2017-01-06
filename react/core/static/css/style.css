@@ -352,9 +352,10 @@ storydetails a:hover {
   text-transform: uppercase;
   background: #c59a6d;
   color: #282f35;
-  padding: 8px 35px;
+  padding: 7px 30px;
   margin-bottom: 2px;
   border-radius: 0;
+  border-radius: 2px;
   font-size: 12px;
   color: #ffffff;
   transition: all 0.5s;
@@ -629,9 +630,9 @@ margin-bottom: 30px;
 #game .form-control {
   display: inline-block;
   text-align: center;
-  width: 71px;
+  width: 70px;
   height: 40px;
-  padding: 7px 30px;
+  padding: 7px 10px;
 }
 
 .form-control:focus {
