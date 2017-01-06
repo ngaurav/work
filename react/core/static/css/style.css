@@ -582,7 +582,7 @@ address{
 margin-bottom: 30px;
 }
 
-#contact .form-control {
+.form-control {
 	display: block;
 	width: 100%;
 	height: 40px;
@@ -603,7 +603,7 @@ margin-bottom: 30px;
 	transition: all 0.5s;
 }
 
-#contact .form-control:focus {
+.form-control:focus {
 	border-color: #C59A6D;
 	outline: 0;
 	-webkit-box-shadow: none;
