@@ -20,8 +20,8 @@ function checkNumbers() {
 }
 
 function show_sol() {
-  $('#g-input').find('input').val('');
-  $('.g-bottom-button-container').find("input").prop('disabled', true);
+  $('.g-fakeForm').css("display", "none");
+  $('.g-bottom-button-container').css("display", "none");
   $('.g-result').css("display", "block");
 }
 
