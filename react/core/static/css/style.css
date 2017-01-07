@@ -357,17 +357,18 @@ storydetails a:hover {
   background: #c59a6d;
   color: #282f35;
   padding: 7px 30px;
-  margin-bottom: 2px;
-  margin-left: 10px;
   border-radius: 0;
   border-radius: 2px;
   font-size: 12px;
   color: #ffffff;
   transition: all 0.5s;
 }
-.check-btn:disabled {
 
+.g-check {
+  margin-bottom: 2px;
+  margin-left: 10px;
 }
+
 .check-btn:hover {
   background: transparent;
   border: 1px solid #c59a6d;
@@ -632,7 +633,7 @@ margin-bottom: 30px;
   padding: 7px 12px;
 }
 
-#game .form-control {
+.g-num .form-control {
   display: inline-block;
   text-align: center;
   width: 70px;
