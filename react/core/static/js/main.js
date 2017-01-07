@@ -103,7 +103,6 @@ function main() {
 	      // itemsMobile : false
 
 	  });
-    $('.check-btn').attr('disabled',true);
     $('.g-num').keyup(function(){
         checkNumbers();
     })
