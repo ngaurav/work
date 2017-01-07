@@ -354,10 +354,10 @@ storydetails a:hover {
 
 .check-btn {
   text-transform: uppercase;
-  background: #c59a6d;
-  color: #282f35;
+  background: transparent;
+  border: 1px solid #c59a6d;
+  color: #ffffff;
   padding: 7px 30px;
-  border-radius: 0;
   border-radius: 2px;
   font-size: 12px;
   color: #ffffff;
@@ -370,9 +370,8 @@ storydetails a:hover {
 }
 
 .check-btn:hover {
-  background: transparent;
-  border: 1px solid #c59a6d;
-  color: #ffffff;
+  background: #c59a6d;
+  color: #282f35;
 }
 
 .nopadding{
