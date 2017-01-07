@@ -242,16 +242,17 @@
                   </p>
                   <div class="field text left what_is_your_guess">
                     <p class="nytint-formacist-description"></p>
-                    <input name="guess" autocomplete="off" type="text" class="nytint-textinput g-sentence" data-charactercount="100">
+                    <input name="guess" autocomplete="off" type="text" class="form-control" data-charactercount="100">
                   </div>
 
-                  <button type="button" class="g-submit" onclick="show_sol()">I think I know it</button>
+                  <button type="button" class="g-submit btn check-btn" onclick="show_sol()">I think I know it</button>
                 </div>
                 <p class="g-justTellMe"><a href="javascript:void(0)" onclick="show_sol()">I don't want to play; just tell me the answer.</a></p>
               </div>
             </div>
-            <div class="g-article-container">
-              <div class="g-result g-noText" style="display: none;">
+            <div class="space"></div>
+            <div class="g-article-container row">
+              <div class="g-result g-noText col-md-8 col-md-offset-2" style="display: none;">
 
             <p class="paragraph paragraph-1">The answer was extremely basic. The rule was simply: <em>Each number must be larger than the one before it.</em> 5, 10, 20 satisfies the rule, as does 1, 2, 3 and -17, 14.6, 845. Children in kindergarten can understand this rule.</p>
 
