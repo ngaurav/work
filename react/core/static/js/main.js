@@ -105,7 +105,14 @@ function main() {
 	  });
     $('.g-num').keyup(function(){
         checkNumbers();
-    })
+    });
+    $('#g-submit').attr('disabled',true);
+    $('#g-sentence').keyup(function(){
+        if($(this).val().length !=0)
+            $('#g-submit').attr('disabled', false);
+        else
+            $('#g-submit').attr('disabled',true);
+    });
 
 	});
 
