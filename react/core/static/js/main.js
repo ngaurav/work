@@ -20,7 +20,7 @@ function checkNumbers() {
 }
 
 function show_sol() {
-  $('.g-input').css("display", "none");
+  $('#g-input').css("display", "none");
   $('.g-bottom-button-container').css("display", "none");
   $('.g-result').css("display", "block");
 }
