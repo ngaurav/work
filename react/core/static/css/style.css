@@ -328,6 +328,10 @@ storydetails a:hover {
 }
 .space{ padding-top: 40px; }
 
+.g-fakeForm {
+  font-family: Lato;
+}
+
 .g-answer {
   padding-left: 10px;
   display: inline-block;
