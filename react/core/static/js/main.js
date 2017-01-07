@@ -105,10 +105,7 @@ function main() {
 	  });
     $('.check-btn').attr('disabled',true);
     $('.g-num').keyup(function(){
-        if(checkNumbers())
-            $('.sendButton').attr('disabled', false);
-        else
-            $('.sendButton').attr('disabled',true);
+        checkNumbers();
     })
 
 	});
