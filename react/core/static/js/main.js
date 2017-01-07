@@ -46,6 +46,7 @@ function add_guess() {
   clone.append(rightWrong);
 
   guesses.append(clone);
+  checkNumbers();
 }
 
 function main() {
