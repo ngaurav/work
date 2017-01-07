@@ -4,7 +4,7 @@
 //
 //
 var inputData = [NaN, NaN, NaN];
-var right = "<p class = 'g-answer g-yes'>Yes!</p>", wrong = "<p class = 'g-answer g-no'>No.</p>";
+var right = "<p class = 'g-answer'>Yes!</p>", wrong = "<p class = 'g-answer'>No.</p>";
 function checkNumbers() {
   $("#game input").each(function(i) {
     var val = $(this).val();
