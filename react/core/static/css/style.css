@@ -239,7 +239,7 @@ a.down-btn span.fa.fa-angle-down {
 
 #storydetails {
   margin: 0;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
 }
 
 .dark-bg a {
@@ -328,8 +328,12 @@ storydetails a:hover {
 }
 .space{ padding-top: 40px; }
 
-.g-fakeForm {
-  font-family: Lato;
+#game {
+  font-family: 'Lato', sans-serif;
+}
+
+#game h2.section-title{
+  font-family: 'Montserrat', sans-serif;;
 }
 
 .g-answer {
