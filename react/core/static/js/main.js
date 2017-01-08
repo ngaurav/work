@@ -138,11 +138,11 @@ function main() {
       cache: false,
       success: function (data) {
         alert("Message Sent.");
-        $(name).val() = "";
-        $(phone).val() = "";
-        $(email).val() = "";
-        $(subject).val() = "";
-        $(message).val() = "";
+        $(name).val('');
+        $(phone).val('');
+        $(email).val('');
+        $(subject).val('');
+        $(message).val('');
       },
       error: function () {
         alert("Could not send the message. Try again.");
