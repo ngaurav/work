@@ -10,7 +10,6 @@ def ping(request):
     if not request.is_ajax():
         return HttpResponseBadRequest()
     else:
-        csrf_token = str(csrf(request)['csrf_token'])
         mail = Mail()
         mail.name = request.POST['name']
         mail.phone = request.POST['phone']

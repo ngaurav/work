@@ -132,7 +132,7 @@ function main() {
         'email': email,
         'subject': subject,
         'message': message,
-        'csrf': csrf
+        'csrfmiddlewaretoken': csrf
       },
       type: 'post',
       cache: false,
