@@ -120,9 +120,9 @@ function main() {
     var csrf = $("#contact-form").attr("csrf");
     var name = $("#contact-form input[name='name']");
     var phone = $("#contact-form input[name='phone']");
-    var email = $("#contact-form input[name='email']").val();
-    var subject = $("#contact-form input[name='subject']").val();
-    var message = $("#contact-form textarea[name='message']").val();
+    var email = $("#contact-form input[name='email']");
+    var subject = $("#contact-form input[name='subject']");
+    var message = $("#contact-form textarea[name='message']");
 
     $.ajax({
       url: '/ping/',
