@@ -122,7 +122,7 @@ function main() {
     var phone = $("#contact-form input[name='phone']").val();
     var email = $("#contact-form input[name='email']").val();
     var subject = $("#contact-form input[name='subject']").val();
-    var message = $("#contact-form input[name='message']").val();
+    var message = $("#contact-form textarea[name='message']").val();
 
     $.ajax({
       url: '/ping/',
