@@ -116,8 +116,34 @@ function main() {
 
 	});
 
+  $(".send-btn").click(function () {
+    var csrf = $("#contact-form").attr("csrf");
+    var name = $("#contact-form input[name='name']").val();
+    var phone = $("#contact-form input[name='phone']").val();
+    var email = $("#contact-form input[name='email']").val();
+    var subject = $("#contact-form input[name='subject']").val();
+    var message = $("#contact-form input[name='message']").val();
 
-
+    $.ajax({
+      url: '/ping/',
+      data: {
+        'name': name,
+        'phone': phone,
+        'email': email,
+        'subject': subject,
+        'message': message,
+        'csrf': csrf
+      },
+      type: 'post',
+      cache: false,
+      success: function (data) {
+        alert("Message Sent.");
+      },
+      error: function () {
+        alert("Could not send the message. Try again.");
+      }
+    });
+  });
 
 
 }());
