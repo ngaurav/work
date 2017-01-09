@@ -528,7 +528,7 @@ ul.clients li{
 	border: 1px solid #222;
 	padding: 70px 20px;
 	text-align: center;
-	/*opacity: 0.7;*/
+	opacity: 0.9;
 	transition: all 0.8s;
 	max-height: 340px;
 	margin-bottom: 30px;
