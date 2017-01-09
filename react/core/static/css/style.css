@@ -462,7 +462,6 @@ storydetails a:hover {
 	color: #c59a6d;
 }
 
-
 a.btn.read-more-btn{
 	text-transform: uppercase;
 	background: #c59a6d;
@@ -528,7 +527,7 @@ ul.clients li{
 	border: 1px solid #222;
 	padding: 70px 20px;
 	text-align: center;
-	opacity: 0.9;
+	opacity: 0.85;
 	transition: all 0.8s;
 	max-height: 340px;
 	margin-bottom: 30px;
@@ -548,10 +547,10 @@ ul.clients li{
 	border-width: 2px;
 	border-color: #dcc2a7;
 }
-/*.team:hover{
+.team:hover{
 	opacity: 1;
 	border: 1px solid #222;
-}*/
+}
 .team img {
 	width: 80px;
 	margin: 0 auto;
