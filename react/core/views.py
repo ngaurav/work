@@ -29,9 +29,9 @@ def count1(request):
             polt = Polt.objects.get(pk=id)
             polt.count1 = F('count1')+inc
             polt.save()
-            ret = {}
         except:
             return HttpResponseBadRequest()
+        ret = {}
         for p in Polt.objects.all():
             ret[p.pk] = p.count1
         return JsonResponse(ret)
