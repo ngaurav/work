@@ -20,5 +20,6 @@ from react.core import views as core_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ping/', core_views.ping, name='ping'),
+    url(r'^count1/', core_views.count1, name='count1'),
     url(r'^$', core_views.home, name='home'),
 ]

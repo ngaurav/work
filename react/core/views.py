@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse, HttpResponseBadRequest
 from .models import Mail, Polt
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def home(request):
@@ -19,10 +20,20 @@ def ping(request):
         mail.save()
         return HttpResponse("ok")
 
-def count(request):
-    id = request.POST['id']
-    inc = request.POST['inc']
-    polt = Polt.objects.get(pk=id)
-    polt.count1 = F('count1')+inc
-    polt.save()
-    
+@csrf_exempt
+def count1(request):
+    if request.method == 'POST':
+        id = request.POST['id']
+        inc = request.POST['inc']
+        try:
+            polt = Polt.objects.get(pk=id)
+            polt.count1 = F('count1')+inc
+            polt.save()
+            ret = {}
+        except:
+            return HttpResponseBadRequest()
+        for p in Polt.objects.all()
+            ret[p.pk] = p.count1
+        return JsonResponse(ret)
+    else:
+        return HttpResponseBadRequest()
