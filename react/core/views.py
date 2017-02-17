@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseBadRequest
-from .models import Mail
+from django.http import HttpResponse, JsonResponse, HttpResponseBadRequest
+from .models import Mail, Polt
 
 # Create your views here.
 def home(request):
@@ -18,3 +18,11 @@ def ping(request):
         mail.message = request.POST['message']
         mail.save()
         return HttpResponse("ok")
+
+def count(request):
+    id = request.POST['id']
+    inc = request.POST['inc']
+    polt = Polt.objects.get(pk=id)
+    polt.count1 = F('count1')+inc
+    polt.save()
+    
