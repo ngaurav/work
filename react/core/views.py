@@ -33,7 +33,7 @@ def count1(request):
             return HttpResponseBadRequest()
         ret = {}
         for p in Polt.objects.all():
-            ret[p.pk] = p.count1
+            ret[str(p.pk)] = str(p.count1)
         return JsonResponse(ret)
     else:
         return HttpResponseBadRequest()
